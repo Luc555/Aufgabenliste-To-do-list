@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Ablauf(Aplauf pronounce) is a term that can means expiry(termo)-->
+        <h1>Ablauf</h1>
+    </div>
+
+    <div class="container">
+        <div class="task-input">
+            <img src="./Img/bars-icon.svg" alt="icon">  
+            <input type="text" placeholder="Entre com uma nova tarefa">
+        </div>
+        <div class="list">
+            <div class="filters">
+                <span class="active" id="all">Todas</span>
+                <span id="pending">Pendente</span>
+                <span id="completed">Completo</span>
+            </div>
+            <button class="clear-btn">Limpar tudo</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
