@@ -13,9 +13,9 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     /*It turns invisible the elements that surpass the limit  */
-    overflow: hidden;
+    overflow:auto;
     /*Creates a linear gradient(degradê) effect and is applied as background image */
     background: linear-gradient(135deg, #fffafa, #093364);
 }
@@ -44,8 +44,9 @@ h1{
 
 .container{
     max-width: 500px;
+    height: 475px;
     padding: 28px 0 30px;
-    margin: 112px auto;
+    margin:30px 0px 200px 360px;    
     background: #fffafa;
     border-radius: 7px;
     box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
@@ -260,3 +261,297 @@ scrollbars or overflows the element.
   .settings li i{
     padding-right: 8px;
   }
+
+.copyright-area{
+    background-color: #051932;
+    color: #fff;
+    width: 100%;
+    max-width: 1281px;
+    height: 100px;
+    margin:0px 0px 0px 0px;
+}
+.copyright-area footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+@media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android)}
+@media (min-width:480px)  { smartphones, Android phones, landscape iPhone }
+@media (min-width:600px)  { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) }
+@media (min-width:801px)  { tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) { big landscape tablets, laptops, and desktops}
+@media (min-width:1281px) { hi-res laptops and desktops }
+*/
+
+@media (max-width: 320px){
+
+body{
+    width: 100%;
+    height: 800px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  justify-content: center;
+  align-items: center;
+  line-height: 32px;
+}
+
+.container{
+  max-width: 300px;
+  height: 530px;
+  padding: 28px 0 30px;
+  margin: 30px auto;
+  background: #fffafa;
+  border-radius: 12px;
+  box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
+}
+
+.task-input{
+  height: 52px;
+  word-wrap: break-word;
+}
+
+
+.list{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: column;
+}
+
+.filters{
+    display: flex;
+    position: absolute;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.clear-btn{
+  position: relative;
+  margin: 34px -238px 0px 0px;
+}
+
+
+
+}
+
+
+@media (min-width: 375px){
+
+body{
+    width: 100%;
+    height: 800px;
+}
+
+
+  h1{
+    font-size: 50px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    justify-content: center;
+    align-items: center;
+    line-height: 32px;
+  }
+  
+  .container{
+    max-width: 320px;
+    height: 530px;
+    padding: 28px 0 30px;
+    margin: 30px auto;
+    background: #fffafa;
+    border-radius: 12px;
+    box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
+  }
+  
+  
+  .list{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+  }
+  
+  .filters{
+      display: flex;
+      position: absolute;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+  }
+  
+  .clear-btn{
+    position: relative;
+    margin: 34px -238px 0px 0px;
+  }
+
+  
+.copyright-area{
+  background-color: #051932;
+  color: #fff;
+  width: 100%;
+  max-width: 1281px;
+  height: 100px;
+  margin:0px 0px 0px 0px;
+}
+.copyright-area footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+}
+
+@media (min-width: 425px){
+
+  body{
+      width: 100%;
+      height: 800px;
+  }
+  
+  
+    h1{
+      font-size: 50px;
+      font-family: 'Noto Sans Georgian', sans-serif;
+      justify-content: center;
+      align-items: center;
+      line-height: 32px;
+    }
+    
+    .container{
+      max-width: 380px;
+      height: 530px;
+      padding: 28px 0 30px;
+      margin: 30px auto;
+      background: #fffafa;
+      border-radius: 12px;
+      box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
+    }
+    
+    
+    .list{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      flex-direction: column;
+    }
+    
+    .filters{
+        display: flex;
+        position: absolute;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .clear-btn{
+      position: relative;
+      margin: 34px -312px 0px 0px;    }
+  
+    
+  .copyright-area{
+    background-color: #051932;
+    color: #fff;
+    width: 100%;
+    max-width: 1281px;
+    height: 100px;
+    margin:0px 0px 0px 0px;
+  }
+  .copyright-area footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+}
+
+@media (min-width: 725px){
+
+  body{
+      width: 100%;
+      height: 800px;
+  }
+  
+  
+    h1{
+      font-size: 50px;
+      font-family: 'Noto Sans Georgian', sans-serif;
+      justify-content: center;
+      align-items: center;
+      line-height: 32px;
+    }
+    
+    .container{
+      max-width: 660px;
+      height: 530px;
+      padding: 28px 0 30px;
+      margin: 30px auto;
+      background: #fffafa;
+      border-radius: 12px;
+      box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
+    }
+    
+    
+    .list{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      flex-direction: column;
+    }
+    
+    .filters{
+        display: flex;
+        position: absolute;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .clear-btn{
+      position: relative;
+      margin: 34px -568px 0px 0px;
+    }
+  
+    
+  .copyright-area{
+    background-color: #051932;
+    color: #fff;
+    width: 100%;
+    max-width: 1281px;
+    height: 100px;
+    margin:0px 0px 0px 0px;
+  }
+  .copyright-area footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+}
