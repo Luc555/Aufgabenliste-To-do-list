@@ -12,8 +12,8 @@
 }
 
 body{
-    width: 100%;
-    height: 900px;
+    max-width: 100%;
+      position: relative;
     /*It turns invisible the elements that surpass the limit  */
     overflow:auto;
     /*Creates a linear gradient(degradê) effect and is applied as background image */
@@ -36,8 +36,6 @@ h1{
     font-size: 50px;
     font-family: 'Noto Sans Georgian', sans-serif;
     font-weight: bold;
-    display: flex;
-    align-items: center;
     line-height: 48px;
     margin: 18px auto;
 }
@@ -268,7 +266,7 @@ scrollbars or overflows the element.
     width: 100%;
     max-width: 1281px;
     height: 100px;
-    margin:0px 0px 0px 0px;
+    margin:auto;
 }
 .copyright-area footer{
     display: flex;
@@ -286,37 +284,58 @@ scrollbars or overflows the element.
 @media (min-width:1281px) { hi-res laptops and desktops }
 */
 
-@media (max-width: 320px){
+@media (max-width: 320px) and (max-width: 374px){
 
 body{
     width: 100%;
-    height: 800px;
+    height: 538px;
 }
 
 h1{
   font-size: 50px;
   font-family: 'Noto Sans Georgian', sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 32px;
+  line-height: 0px;
 }
 
 .container{
   max-width: 300px;
-  height: 530px;
-  padding: 28px 0 30px;
-  margin: 30px auto;
+  height: 418px;
+  padding: 0px;
+  margin:   10px auto;
   background: #fffafa;
   border-radius: 12px;
   box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
 }
 
-.task-input{
-  height: 52px;
-  word-wrap: break-word;
+.task-input {
+  height: 64px;
+  padding: 18px 14px 0px 14px;
+  position: relative;
 }
 
+.task-input img {
+  top: 50%;
+  padding: 20px 0px 0px 0px;
+  position: absolute;
+  transform: translate(17px, -50%);
+  display: flex;
+}
+.task-box.overflow{
+  overflow-y: auto;
+  max-height: 200px;
+}
 
+.task-box .task {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-bottom: 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
 .list{
   display: flex;
   align-items: center;
@@ -342,12 +361,17 @@ h1{
   margin: 34px -238px 0px 0px;
 }
 
-
+.copyright-area {
+  background-color: #051932;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+}
 
 }
 
 
-@media (min-width: 375px){
+@media (min-width: 375px) and (max-width: 424px){
 
 body{
     width: 100%;
@@ -358,6 +382,7 @@ body{
   h1{
     font-size: 50px;
     font-family: 'Noto Sans Georgian', sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
     line-height: 32px;
@@ -417,7 +442,7 @@ body{
   
 }
 
-@media (min-width: 425px){
+@media (min-width: 425px) and (max-width: 724px){
 
   body{
       width: 100%;
@@ -428,6 +453,7 @@ body{
     h1{
       font-size: 50px;
       font-family: 'Noto Sans Georgian', sans-serif;
+      display: flex;
       justify-content: center;
       align-items: center;
       line-height: 32px;
@@ -486,11 +512,11 @@ body{
     
 }
 
-@media (min-width: 725px){
+@media (min-width: 725px) and (max-width: 1023px){
 
   body{
-      width: 100%;
-      height: 800px;
+    width: 100%;
+    height: 1076px;
   }
   
   
@@ -506,7 +532,7 @@ body{
       max-width: 660px;
       height: 530px;
       padding: 28px 0 30px;
-      margin: 30px auto;
+      margin: 130px auto;
       background: #fffafa;
       border-radius: 12px;
       box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
@@ -538,14 +564,23 @@ body{
       margin: 34px -568px 0px 0px;
     }
   
-    
+  .footer{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+
+  }
+
   .copyright-area{
+    max-width: 100%;
     background-color: #051932;
     color: #fff;
     width: 100%;
-    max-width: 1281px;
-    height: 100px;
-    margin:0px 0px 0px 0px;
+    height: 178px;
+    position: absolute;
+    margin: 0;
+
   }
   .copyright-area footer{
     display: flex;
@@ -554,4 +589,77 @@ body{
   }
     
     
+}
+
+@media (min-width: 1024px){
+body{
+    width: 100%;
+    /*It turns invisible the elements that surpass the limit  */
+    overflow:auto;
+    /*Creates a linear gradient(degradê) effect and is applied as background image */
+    background: linear-gradient(135deg, #fffafa, #093364);
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: bold;
+  line-height: 48px;
+  margin: 18px auto;
+}
+.container{
+    max-width: 900px;
+    height: 530px;
+    padding: 28px 0 30px;
+    margin: 230px auto;
+    background: #fffafa;
+    border-radius: 12px;
+    box-shadow: 0 10 px 30px rgba(0,0, 0, 0.1);
+}
+  
+  
+.list{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 8px 0px 0px -143px;
+}
+  .filters{
+      display: flex;
+      position: absolute;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+  }
+  
+  .clear-btn{
+    position: relative;
+    margin: 5px -402px 0px 0px;
+    }
+
+
+p{
+  max-width: 810px;
+
+}
+
+.copyright-area{
+  max-width: 100%;
+  background-color: #051932;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  
+}
+
+.copyright-area footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 }

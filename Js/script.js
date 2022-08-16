@@ -62,7 +62,9 @@ if(tasks){
     taskBox.innerHTML = liTag || `<span>You don't have any task here</span>`;
     let checkTask = taskBox.querySelectorAll(".task");
     !checkTask.length ? clearAll.classList.remove("active") : clearAll.classList.add("active");
-    taskBox.offsetHeight >= 300 ? taskBox.classList.add("overflow") : taskBox.classList.remove("overflow");
+//Aqui eu estipulo que após 150px de height de altura na lista ele cria 
+//a classe overflow e assim consigo definir a quebra de inserções
+    taskBox.offsetHeight >= 150 ? taskBox.classList.add("overflow") : taskBox.classList.remove("overflow");
 }
 showTasks("all");
 
